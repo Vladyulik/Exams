@@ -7,7 +7,7 @@ const changeQuotes = (string) => {
   let open = false;
   for (let char of string) {
     if (char === '"') {
-      !open ? char = '«' : char = '»';
+      char = !open ? '«' : '»';
       open = !open;
     }
     result.push(char);
